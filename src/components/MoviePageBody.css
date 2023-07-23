@@ -1,0 +1,210 @@
+.moviepage1_body{
+    width: 76%;
+}
+
+.moviepage1_container{
+    width: 85%;
+    margin: auto;
+}
+
+.img_desc{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+.img_des_container{
+    flex:0.3;
+}
+
+.img_dee{
+    height: 100%; 
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15px; 
+}
+
+.title_desc{
+    flex: 0.6;
+    margin-top: 2%;
+}
+.head{
+    margin-bottom: 5%;
+    font-size: 2.5rem;
+}
+
+.plot{
+    font-size: 2rem;
+}
+
+.timer{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10%;
+    font-size: 2rem;
+}
+
+.clock{
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+    text-wrap: nowrap;
+    gap:5%;
+    margin-bottom: 15%;
+   
+}
+
+.watch_heart{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+    gap: 2%;
+}
+
+.watch{
+    padding: 4% 10%;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: #6145EA;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.heart2{
+    padding: 3% 4%;
+    background-color: #d9dbd9;
+    border-radius: 10px;
+    color: #6145EA;
+}
+
+.hearty{
+    font-size: 3rem;
+}
+
+.second{
+    margin-top: 4%;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+
+@media screen and (max-width: 750px) {
+    .moviepage1_body{
+        width: 58%;
+    }
+
+    .moviepage1_container{
+        width: 99%;
+    }
+
+    .img_des_container{
+        flex:0.5;
+    }
+
+    .img_desc{
+        margin-top: 38%;
+        gap: 1%;
+    }
+
+    .title_desc{
+        flex: 0.4;
+    }
+
+    .head{
+        margin-bottom: 3%;
+        font-size: 1.8rem;
+        font-weight: bolder;
+    }
+
+    .plot{
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    .timer{
+        margin-top: 3%;
+        gap:11%;
+        font-size: 1rem;
+    }
+
+    .clock{
+        width: 32%;
+        gap:2%;
+        margin-bottom: 15%;
+    }
+    
+    .watch{
+        padding: 2% 5%;
+        border-radius: 28px;
+        font-size: 1.1rem;
+    }
+
+    .heart2{
+        padding: 1% 2%;
+        border-radius: 8px;
+    }
+
+    .hearty{
+        font-size: 2rem;
+    }
+
+    .second{
+        margin-top: 20%;
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 595px) {
+
+    .moviepage1_container{
+        width: 85%;
+    }
+    .img_desc{
+        margin-top: 8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+        /* flex-wrap: wrap; */
+        gap: 3%;
+    }
+
+    .head{
+        margin-bottom: 5%;
+        font-size: 2rem;
+    }
+
+    .plot{
+        font-size: 1.2rem;
+    }
+
+    .timer{
+        margin-top: 4%;
+        gap:11%;
+        font-size: 1.2rem;
+    }
+
+    .watch{
+        padding: 4% 10%;
+        border-radius: 30px;
+    }
+
+    .heart2{
+        padding: 3% 4%;
+        border-radius: 10px;
+    }
+}

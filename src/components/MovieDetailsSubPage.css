@@ -1,0 +1,82 @@
+.subpage{
+    position: absolute;
+    right: 0;
+    top:0;
+    width: 25%;
+    background-color: grey;
+    height: 100%;
+}
+
+.subpage_wrapper{
+    width: 80%;
+    margin: auto;
+}
+
+.arrow_container{
+    width: 100%;
+    margin-top: 10%;
+}
+
+.arrow{
+   font-size: 2.5rem;
+   font-weight: light;
+}
+
+.subpage_img_container{
+    margin-top: 18%; 
+}
+
+.subpage_img{
+    height: 100%; 
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.movie_title{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 15%; 
+}
+
+.subpage_text{
+    font-size: 1.8rem;
+    margin-top: 4%; 
+}
+
+.watch_btn1{
+    text-align: center;
+}
+
+.watch1{
+    padding: 7% 28%;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: #6145EA;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 15%;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .subpage_wrapper{
+        width: 95%;
+    }
+
+    .arrow{
+        font-size: 2rem;
+     }
+
+    .movie_title{
+        font-size: 1.3rem;
+    }
+
+    .subpage_text{
+        font-size: 1.4rem;
+        margin-top: 10%; 
+    }
+}
