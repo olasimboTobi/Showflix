@@ -17,10 +17,10 @@ function App() {
         style={{ width: "600px" }}
       />
       <Routes >
-        <Route path="/" element={<Layout />}>
-          <Route path="/homepage/*" element={<HomePage/>} />
-          <Route path="/movie/:imdbID/*" element={<MoviePage/>}/>
-        </Route>
+        {/* <Route path="/" element={<Layout />}> */}
+        <Route path="/homepage/*" element={<HomePage/>} />
+        <Route path="/movie/:imdbID/*" element={<MoviePage/>}/>
+        {/* </Route> */}
       </Routes>
     </>
   );

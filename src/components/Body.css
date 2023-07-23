@@ -82,7 +82,7 @@
     }
 
     .body_search_input_icon{
-        width: 66%;
+        width: 56%;
         padding: 1% 1.2%;
         background-color: #EFF0F6;
         border-radius: 15px;
@@ -96,6 +96,7 @@
     .body_search_input{
         flex:0.5;
         font-size: 1rem;
+        width:80%;
         font-weight: bolder;
     }
 
