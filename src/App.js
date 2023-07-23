@@ -5,6 +5,7 @@ import { Routes, Route} from 'react-router-dom';
 import MoviePage from './components/MoviePage';
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import MovieContentHomePage from './components/MovieContentHomePage';
 
 
 
@@ -17,10 +18,12 @@ function App() {
         style={{ width: "600px" }}
       />
       <Routes >
-        {/* <Route path="/" element={<Layout />}> */}
-        <Route path="/homepage/*" element={<HomePage/>} />
-        <Route path="/movie/:imdbID/*" element={<MoviePage/>}/>
-        {/* </Route> */}
+        {/* <Route path="/*" element={<MovieContentHomePage/>} /> */}
+        {/* <Route path="/" element={<Layout />}>  */}
+          <Route path="/*" element={<HomePage/>} />
+          <Route path="/felly/:imdbID/*" element={<MoviePage/>}/> 
+        {/* </Route>  */}
+    
       </Routes>
     </>
   );

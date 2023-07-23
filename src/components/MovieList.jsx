@@ -10,11 +10,13 @@ const MovieList = (props) => {
     const handleMouse = (movie) => {
    
 
-        const pattern = "homepage";
+        const pattern = "felly";
         if (location.pathname.includes(pattern)) {
-        navigate(`/homepage/${movie.imdbID}`);
+        // navigate(`/homepage/${movie.imdbID}`);
+        navigate(`/felly/${movie.imdbID}/${movie.imdbID}`);
         } else {
-        navigate(`/movie/${movie.imdbID}/${movie.imdbID}`);
+        // navigate(`/movie/${movie.imdbID}/${movie.imdbID}`);
+        navigate(`/${movie.imdbID}`);
         }
     } 
 
@@ -24,7 +26,7 @@ const MovieList = (props) => {
             <div className='row_posters'>
                 {props.movies.map((movie) => (
                     <Link 
-                        to={`/movie/${movie.imdbID}`} 
+                        to={`/felly/${movie.imdbID}`} 
                         key={movie.imdbID}
                         onMouseEnter={() => handleMouse(movie)}   
                         className='view_img'>

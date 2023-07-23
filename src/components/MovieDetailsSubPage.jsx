@@ -36,11 +36,13 @@ const MovieDetailsSubPage = () => {
 
 
   const handleClick2 = () => {
-    const pattern = "homepage";
+    const pattern = "felly";
     if (location.pathname.includes(pattern)) {
-      navigate(`/homepage`);
+      // navigate(`/homepage`);
+      navigate(`/felly/${movie.imdbID}`);
     } else {
-      navigate(`/movie/${movie.imdbID}`);
+      // navigate(`/movie/${movie.imdbID}`);
+      navigate(`/`);
     }
   };
 
