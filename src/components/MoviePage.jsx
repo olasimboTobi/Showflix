@@ -24,7 +24,7 @@ const MoviePage = () => {
 
   const fetchMovieDetailPage = async() => {
     const response = await axios
-      .get(`http://www.omdbapi.com/?i=${imdbID}&apikey=${apiKey}`)
+      .get(`https://www.omdbapi.com/?i=${imdbID}&apikey=${apiKey}`)
       .catch(err => {
         console.log("Err", err)});
       
