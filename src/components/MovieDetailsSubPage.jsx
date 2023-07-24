@@ -8,7 +8,7 @@ import { Link,useParams, useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 
-const apiKey = "55b7196a"; 
+const apiKey = "a3d2c83e"; 
 
 const MovieDetailsSubPage = () => {
 

@@ -10,7 +10,7 @@ import MovieDetailsSubPage from './MovieDetailsSubPage';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 
 
-const apiKey = "55b7196a"; 
+const apiKey = "a3d2c83e"; 
 
 
 const MoviePage = () => {
