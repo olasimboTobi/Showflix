@@ -3,6 +3,8 @@ import "./SideBar.css"
 import { AiOutlineSearch } from "react-icons/ai";
 import { AiOutlineHeart } from "react-icons/ai";
 
+
+
 const SideBar = ({flix}) => {
   
   return (

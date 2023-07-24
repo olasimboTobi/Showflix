@@ -4,8 +4,9 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 import {useDispatch, useSelector } from 'react-redux';
 import axios from "axios";
 import {selectMovie} from "../redux/actions/movieActions"
-import { Link,useParams, useLocation, useNavigate } from "react-router-dom";
+import { useParams, useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+
 
 
 const apiKey = "a3d2c83e"; 
@@ -25,7 +26,6 @@ const MovieDetailsSubPage = () => {
       .catch(err => {
         console.log("Err", err)});
       
-      
     dispatch(selectMovie(response.data));
   }
 
@@ -38,10 +38,8 @@ const MovieDetailsSubPage = () => {
   const handleClick2 = () => {
     const pattern = "felly";
     if (location.pathname.includes(pattern)) {
-      // navigate(`/homepage`);
       navigate(`/felly/${movie.imdbID}`);
     } else {
-      // navigate(`/movie/${movie.imdbID}`);
       navigate(`/`);
     }
   };

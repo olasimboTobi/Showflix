@@ -7,11 +7,10 @@ import {setMovies} from "../redux/actions/movieActions"
 import MovieList from './MovieList';
 
 
+
 const Body = () => {
   const movies = useSelector((state)=> state.allMovies.movies);
   const dispatch = useDispatch();
-  
-  console.log("wat", movies)
   const [searchValue, setSearchValue] = useState('');
 
 

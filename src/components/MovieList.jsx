@@ -1,6 +1,8 @@
-import React, { useState, useRef } from 'react';
+import React from 'react';
 import "./MovieList.css"
 import { Link, useLocation, useNavigate } from "react-router-dom";
+
+
 
 const MovieList = (props) => {
     const navigate = useNavigate();
@@ -8,15 +10,11 @@ const MovieList = (props) => {
   
 
     const handleMouse = (movie) => {
-   
-
         const pattern = "felly";
         if (location.pathname.includes(pattern)) {
-        // navigate(`/homepage/${movie.imdbID}`);
-        navigate(`/felly/${movie.imdbID}/${movie.imdbID}`);
+            navigate(`/felly/${movie.imdbID}/${movie.imdbID}`);
         } else {
-        // navigate(`/movie/${movie.imdbID}/${movie.imdbID}`);
-        navigate(`/${movie.imdbID}`);
+            navigate(`/${movie.imdbID}`);
         }
     } 
 

@@ -5,7 +5,7 @@ import Body from './Body'
 import MovieDetailsSubPage from './MovieDetailsSubPage';
 import { Routes, Route} from 'react-router-dom';
 import { useState } from 'react';
-import { motion } from "framer-motion";
+
 
 
 const HomePage = () => {

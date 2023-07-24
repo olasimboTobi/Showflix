@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import "./MoviePage.css"
-import { useParams, useHistory } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import axios from "axios";
 import {useDispatch, useSelector} from "react-redux"
 import {selectMovie} from "../redux/actions/movieActions"
 import SideBar from './SideBar';
 import MoviePageBody from './MoviePageBody';
 import MovieDetailsSubPage from './MovieDetailsSubPage';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 
 const apiKey = "a3d2c83e"; 
