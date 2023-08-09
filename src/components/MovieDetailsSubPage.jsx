@@ -6,10 +6,9 @@ import axios from "axios";
 import {selectMovie} from "../redux/actions/movieActions"
 import { useParams, useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import { apiKey } from '../utils/helpers';
 
 
-
-const apiKey = "a3d2c83e"; 
 
 const MovieDetailsSubPage = () => {
 

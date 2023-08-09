@@ -5,6 +5,7 @@ import {useDispatch, useSelector} from "react-redux"
 import MovieListSearch from './MovieListSearch';
 import {setMovies} from "../redux/actions/movieActions"
 import MovieList from './MovieList';
+import { apiKey } from '../utils/helpers';
 
 
 
@@ -15,7 +16,7 @@ const Body = () => {
 
 
   const getMovieRequest = async (searchValue) => {
-    const url = `https://www.omdbapi.com/?s=${searchValue}&Type=movie&apikey=a3d2c83e`;
+    const url = `https://www.omdbapi.com/?s=${searchValue}&Type=movie&apikey=${apiKey}`;
 
     const response = await fetch(url);
     const responseJson = await response.json();

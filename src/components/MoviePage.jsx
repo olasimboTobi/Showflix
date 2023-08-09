@@ -8,9 +8,8 @@ import SideBar from './SideBar';
 import MoviePageBody from './MoviePageBody';
 import MovieDetailsSubPage from './MovieDetailsSubPage';
 import { Routes, Route } from 'react-router-dom';
+import { apiKey } from '../utils/helpers';
 
-
-const apiKey = "a3d2c83e"; 
 
 
 const MoviePage = () => {
